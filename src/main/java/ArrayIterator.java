@@ -1,10 +1,10 @@
 import java.util.Iterator;
 
-public class ArrayIterator<Type> implements Iterator<Type> {
+public class ArrayIterator<T> implements Iterator<T> {
     private  int index;
-    private final Type[] values;
+    private final T[] values;
 
-    public ArrayIterator(Type[] values) {
+    public ArrayIterator(T[] values) {
         this.values = values;
         this.index = 0;
     }
@@ -15,7 +15,7 @@ public class ArrayIterator<Type> implements Iterator<Type> {
     }
 
     @Override
-    public Type next() {
+    public T next() {
         return this.values[index++];
     }
 }

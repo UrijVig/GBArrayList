@@ -1,5 +1,6 @@
 public interface GBList<E> extends Iterable<E> {
     boolean add(E e);
+    boolean addEnd(E e);
 
     void remove(int index);
 

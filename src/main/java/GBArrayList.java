@@ -24,6 +24,11 @@ public class GBArrayList<T> implements GBList<T> {
 
     }
 
+    @Override
+    public boolean addEnd(T t) {
+        return false;
+    }
+
     @SuppressWarnings("unchecked")
     @Override
     public void remove(int index) {
